@@ -1,6 +1,16 @@
-fun main() {
-    val person: Person = Student(32, "Nate", "Ebel")
-    person.age
+fun render(state: UiState) = when (state) {
+    is UiState.Error -> println("Error")
+    is UiState.Loaded -> println("Loaded: ${state.title}")
+    UiState.Loading -> println("Loading")
+}
 
-    person.printName()
+fun main() {
+    var state: UiState = UiState.Loading
+    render(state)
+
+    state = UiState.Loaded("Kotlin", "Is cool!")
+    render(state)
+
+    state = UiState.Error(IllegalStateException())
+    render(state)
 }
