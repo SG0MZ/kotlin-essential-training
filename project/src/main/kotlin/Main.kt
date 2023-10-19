@@ -1,6 +1,11 @@
 fun main() {
-    val person: Person = Student(32, "Nate", "Ebel")
-    person.age
+    println(NetworkConfig.baseUrl)
+    println(NetworkConfig.getNetworkDetails())
 
-    person.printName()
+    val provider: NetworkInfoProvider = object : NetworkInfoProvider {
+        override fun getNetworkDetails(): String {
+            TODO("Not yet implemented")
+        }
+    }
+    provider.getNetworkDetails()
 }
