@@ -1,4 +1,3 @@
-
 open class Person(
     age: Int,
     protected val firstName: String,
