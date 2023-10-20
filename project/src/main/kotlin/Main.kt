@@ -1,6 +1,7 @@
-fun main() {
-    val person: Person = Student(32, "Nate", "Ebel")
-    person.age
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 
-    person.printName()
+fun main(): Unit = runBlocking {
+    launch { println("Hello Coroutines") }
 }
