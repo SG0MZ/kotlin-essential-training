@@ -1,6 +1,8 @@
 fun main() {
-    val person: Person = Student(32, "Nate", "Ebel")
-    person.age
+//    val appLogger = ApplicationLogger(SimpleLogger())
+//    appLogger.log("example", appLogger)
 
-    person.printName()
+    val viewModel = ViewModel()
+    viewModel.search("Kotlin")
+    viewModel.search("Code")
 }
