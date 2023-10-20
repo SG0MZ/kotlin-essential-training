@@ -1,6 +1,8 @@
 fun main() {
-    val person: Person = Student(32, "Nate", "Ebel")
-    person.age
 
-    person.printName()
+    arrayOf(1, 2, 3).nonEmptyList()
+    setOf("a", "b", "c").toNonEmptyList()
+
+//    ListUtils.nonEmptyList(arrayOf(1, 2, 3))
+//    ListUtils.setToNonEmptyList(setOf("a", "b", "c"))
 }
