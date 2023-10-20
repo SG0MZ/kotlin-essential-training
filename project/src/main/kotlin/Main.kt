@@ -1,6 +1,7 @@
-fun main() {
-    val person: Person = Student(32, "Nate", "Ebel")
-    person.age
+const val DEFAULT_CLICK_DELAY = 500
 
-    person.printName()
+private fun log(error: Throwable) = println(error)
+
+fun main() {
+    millisForHours(5)
 }
